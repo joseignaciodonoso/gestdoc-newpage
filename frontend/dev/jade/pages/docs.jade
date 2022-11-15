@@ -1,0 +1,483 @@
+extends ../templates/default.jade
+block page
+
+	section.section--header
+
+		.section__wrap.section__wrap--header
+			.section__body
+				h1.section__title Documentos
+
+
+	section.section--fast
+		.section__wrap.section--md
+
+			.section__body
+				.cols
+					.col-xs-6.col-md-4
+						article.article--fast
+							.article__tag: +lorem(2)
+							.article__icon
+								img(src="img/icons/1.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+					.col-xs-6.col-md-4
+						article.article--fast
+							.article__tag: +lorem(2)
+							.article__icon
+								img(src="img/icons/2.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+					.col-xs-6.col-md-4
+						article.article--fast
+							.article__icon
+								img(src="img/icons/3.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+
+
+	section.section--docs
+		.section__wrap.section--md
+			.section__header.section__header--center 
+				h3.section__title Categorías
+				.section__filters.filters.dscroll
+					ul.menu.button-group(data-filter-group="category")
+						li.section__filter.current(data-filter="*") Todos
+						li.section__filter(data-filter=".1") Firmas
+						li.section__filter(data-filter=".2") Certificados
+						li.section__filter(data-filter=".3") Legal
+						li.section__filter(data-filter=".4") SII
+						li.section__filter(data-filter=".5") Firma electronica
+
+			
+			.section__body
+				.cols.cols-gutter-2.grid
+
+					.col-xs-6.col-md-3.1
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/3.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.2
+						article.article--doc(id="contrato")
+							.article__icon
+								img(src="img/icons/1.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.3
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/2.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.4
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/3.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.5
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/4.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.1
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/5.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.2
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/6.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.3
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/7.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.4
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/5.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.5
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/6.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.1
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/7.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+								
+					.col-xs-6.col-md-3.1
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/3.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.2
+						article.article--doc(id="contrato")
+							.article__icon
+								img(src="img/icons/1.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.3
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/2.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.4
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/3.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.5
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/4.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.1
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/5.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.2
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/6.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.3
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/7.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.4
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/5.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.5
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/6.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.1
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/7.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+					.col-xs-6.col-md-3.1
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/3.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.2
+						article.article--doc(id="contrato")
+							.article__icon
+								img(src="img/icons/1.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.3
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/2.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.4
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/3.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.5
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/4.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.1
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/5.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.2
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/6.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.3
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/7.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.4
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/5.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.5
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/6.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.1
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/7.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.1
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/3.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.2
+						article.article--doc(id="contrato")
+							.article__icon
+								img(src="img/icons/1.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.3
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/2.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.4
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/3.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.5
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/4.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.1
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/5.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.2
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/6.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.3
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/7.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.4
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/5.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.5
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/6.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+					.col-xs-6.col-md-3.1
+						article.article--doc(id="regimen")
+							.article__icon
+								img(src="img/icons/7.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+								a.btn.btn--link-xs(data-modal-docs) Ver todos
+
+
+	section.section--help
+		.section__wrap.section--md
+			.section__header
+				h3.h2.section__title ¿No encuentras el documento que buscas?
+				p.section__desscription Dejanos tu mail y nos pondremos en contacto contigo.
+
+			.section__body
+				.section__search
+					.section__search__input
+						form
+							input(type="text" placeholder="Mail")
+							.section__search__button
+								button
+									img(src="img/icons/search.svg")
+
+
+	.modal
+		.modal__back
+		.modal__front
+			.modal__box
+				.modal__close
+					span.fa.fa-close
+				
+				.modal__header
+					.modal__icon
+						img(src="img/icons/1.svg")
+
+					.modal__header__content
+						span.modal__category Documentos
+						h3.modal__title Declaraciones

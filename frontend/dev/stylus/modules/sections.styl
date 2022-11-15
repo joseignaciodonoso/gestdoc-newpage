@@ -1,0 +1,904 @@
+
+#sections
+	position relative
+	left 0%
+	transition .5s
+	&.sections--left
+		left -50%
+
+
+section
+	position relative
+	background-color $light
+	color $dark
+	border-bottom 1px solid rgba(255, 255, 255, .1)
+	overflow hidden
+	// Elementos
+		
+	.section__bg
+		cover(absolute)
+
+	.section__title
+		font-weight bold
+
+	.section__description
+		font-weight normal
+		margin-bottom 20px
+		@media $break-md
+			font-size $global-size-md 
+			line-height $global-lh-lg
+
+	
+	.section__header
+		text-align center
+		margin-bottom 20px
+		position relative
+		.section__title
+			position relative
+			display block
+			margin-bottom 20px
+			color $color_primary
+			@media $break-md
+				max-width 100%
+
+	.section__filters
+		margin 10px
+		padding-bottom 20px
+		position relative
+		overflow auto
+		white-space nowrap
+		margin 0px -20px 30px
+		margin-bottom 40px
+		padding 20px 5px
+		@media $break-limit
+			display flex
+			text-align center
+			justify-content center
+			overflow visible
+			white-space normal
+			margin-bottom 80px
+
+		.section__filter
+			display inline-block
+			border-radius 20px
+			background-color white
+			border 1px solid $cyan
+			color $dark
+			padding 7px 15px
+			margin 0px 2px
+			transition .3s
+			cursor pointer
+			font-weight 500
+			&:hover
+				background-color $cyan
+				color white
+			&.current
+				background-color $cyan
+				color white
+	
+	.section__footer
+		width 100%
+		text-align center
+		.section__description
+			color #1D008E
+			font-size 10px
+			width 50%
+			line-height 1.8
+			font-family 'Roboto'
+			margin 20px auto 0 auto
+
+	
+
+	
+	.section__content
+		position relative
+		color $dark
+		line-height $global-lh-md
+		font-size $global-size-xmd
+		&>*
+			animation slideFadeUp .5s ease backwards
+			animation-stagger(5,.2s)
+		&.section--left
+			text-align left
+
+		&.section--right
+			text-align right
+
+		&.section--center
+			text-align center
+
+		&.section--justify
+			text-align justify
+		
+		blockquote
+			p
+				line-height $global-lh-md
+				font-size $global-size-md
+				color $dark
+				@media $break-md
+					font-size $global-size-lg		
+
+		ul
+			margin-bottom 20px
+			li
+				padding 5px 0px
+				&:before
+					content ''
+					display inline-block
+					margin-right 10px
+					position relative
+					top -1px
+					width 10px
+					height 10px
+					line-height 21px
+					text-align center
+					border-radius 50%
+					overflow initial
+					background-color $color_primary
+
+		&.section__content--2col
+			@media $break-sm
+				column-count 2
+				column-gap 40px
+
+		&.section__content--3col
+			@media $break-sm
+				column-count 2
+				column-gap 40px
+			@media $break-md
+				column-count 3	
+	
+	.section__flex
+		@media $break-md
+			display flex
+			flex-direction row
+			align-items center				
+
+	.section__wrap
+		position relative
+		max-width $limit
+		margin 0 auto
+		padding 30px 10px
+		@media $break-md
+			padding 20px 40px
+
+		&.section__wrap--main
+			padding 120px 20px 120px
+			@media $break-md
+				padding 150px 40px 150px
+		
+
+		&.section__wrap--header		
+			padding 100px 20px 40px		
+			@media $break-md
+				padding 150px 40px 20px		
+
+		&.section__wrap--header-doc		
+			padding 100px 20px 40px		
+			@media $break-md
+				padding 150px 40px 80px		
+		
+		&.section__wrap--md		
+			padding 40px 20px
+			@media $break-md
+				padding 40px	
+				
+		&.section__wrap--sm
+			padding 10px 10px
+			@media $break-md
+				padding 0px 40px
+		
+		&.section__wrap--xs	
+			padding 30px 20px
+			@media $break-md
+				padding 30px 20px
+			
+					
+		&.section--xs
+			max-width ($limit - 800)
+
+		&.section--sm
+			max-width ($limit - 500)
+
+		&.section--md
+			max-width ($limit - 340)
+		
+		&.section--lg
+			max-width ($limit - 200)	
+
+	// Variantes
+
+
+	&.section--dark
+		background $dark
+		color white
+						
+	&.section--light
+		background: rgba(5,102,116,.07);
+		background: linear-gradient(101deg, rgba(5,102,116,.07) 12%, rgba(102,191,191,.07) 100%);
+		color $dark
+	
+	&.section--white
+		background white
+		color $dark	
+	
+	&.section--lighter
+		background $lighter
+		color $dark	
+
+	&.section--white
+		background white
+		color $dark
+	
+	&.section--color-primary
+		background $color_primary
+		color white
+	
+	&.section--color-secundary
+		background $color_primary
+		color white	
+	
+	&.section--gray
+		background $gray
+		color white	
+	
+	&.section--grayten
+		background grayter
+		color white	
+
+	// Types
+
+	
+	&.section--main
+		background $light
+		color white
+		overflow initial
+		z-index 3
+		margin-top: 100px
+
+		.section__primary
+			background #f4f6ff
+			.section__wrap
+				display: flex
+				margin auto
+				.section__body
+					max-width 1000px
+					text-align left
+					margin 0 auto
+					width: 50%
+					@media $break-sm-i
+						position: flex
+					.section__title
+						font-size 34px
+						line-height 46px
+						font-weight 800
+						text-align: left
+						max-width: 1000px
+						color $dark
+						@media $break-sm
+							font-size 48px
+							line-height 54px
+						@media $break-md
+							font-size 64px
+							line-height 68px
+						span
+							color $cyan
+					.section__description
+						color $dark
+						text-align: left
+						margin 30px auto
+						padding-right: 100px
+
+					.section__search
+						position relative
+						max-width 800px
+						border-radius: 9px
+						margin 0 auto
+						text-align center
+
+				&.section__search--openinfo
+					.section__search__input
+						@media $break-md
+							width 58%
+					.section__search__info
+						display block
+						animation fadeIn .5s
+						.section__search__box
+							height 430px
+
+				
+				.section__search__text
+					font-size 14px
+					line-height 18px
+					padding 10px
+				
+				.section__search__back
+					cover(fixed)
+					background-color rgba(0, 43, 255,.6)
+					z-index 1
+					display none
+					&.section__search__back--show
+						display block
+						animation fadeIn .5s
+
+					&.section__search__back--out
+						animation fadeOut .5s ease both
+
+				
+				.section__search__input
+					position relative
+					z-index 2
+					margin 0 1px
+					width 100%
+					transition .5s
+					@media $break-md
+						margin 0
+				
+				.section__search__info
+					position absolute
+					top 25%
+					right 0
+					width 100%
+					z-index 2
+					padding 0px 5px
+					text-align left
+					display none
+					animation fadeOut .5s
+					@media $break-md
+						float right
+						margin 0
+						width 39%
+						margin 10px
+
+					.section__search__box
+						background-color $lightblue
+						color $dark
+						border-radius 40px
+						padding 20px 30px
+						box-shadow $shadow
+						height 0px
+						overflow-y scroll
+						transition .5s
+						@media $break-md
+							border-radius 0 40px 40px 0
+						&>*
+							animation slideFadeUp .5s ease backwards
+							animation-stagger(5,.2s)
+
+						&::-webkit-scrollbar
+							width 8px     /* Tamaño del scroll en vertical */
+							height 8px    /* Tamaño del scroll en horizontal */
+							display none  /* Ocultar scroll */
+								/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+						&::-webkit-scrollbar-thumb
+							background: $cyan
+							border-radius: 4px;
+
+						/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+						&::-webkit-scrollbar-thumb:hover
+							background: #b3b3b3;
+							box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+
+						/* Cambiamos el fondo cuando esté en active */
+						&::-webkit-scrollbar-thumb:active
+							background-color: #999999;
+						
+						.section__info__tag	
+							display inline-block
+							font-size 12px
+							line-height 18px
+							opacity 4
+							border 1px dashed $cyan
+							background-color white
+							border-radius 15px
+							padding 2px 10px
+							margin-bottom 10px
+
+						.section__info__name
+							title h3
+							font-weight bold
+							margin-bottom 20px
+						.section__info__items
+							padding 10px
+							padding-left 0
+							.section__info__item
+								padding 10px 0px
+								font-weight bold
+								font-style italic
+								position relative
+								padding-left 10px
+								&:after
+									content ''
+									position absolute
+									top 20px
+									left 0
+									width 5px
+									height 5px
+									border-radius 50%
+									background-color $cyan2
+						.section__info__description
+							font-size 14px
+							line-height 24px		
+						.section__info__link
+							text-align center
+							padding 10px
+							margin-bottom 10px
+							.btn
+								font-weight bold
+								font-size 16px
+								background-color white
+								color $dark
+								span
+									margin-left 10px
+							
+					.section__search__footer
+						display flex
+						justify-content flex-end
+						.btn
+							max-width 100%
+							width 100%
+							text-align center
+							font-size 16px
+							line-height 22px
+							font-weight bold
+							margin-right 10px !important
+
+						
+
+				input 
+					height 20px
+					border 1px solid $color_primary
+					background-color white
+					box-shadow $shadow
+					border-radius 15px
+					font-size 24px
+					color rgba(0,0,0,.7)
+					z-index 3
+					position relative
+					width 100%
+					@media $break-md
+						padding 32px
+					&::placeholder
+						font-size 13px
+						color rgba(0,0,0,.3)
+						@media $break-md
+							font-size 18px
+				.section__search__button
+					position absolute
+					top 50%
+					right 0%
+					transform translate(0%,-50%)
+					margin-right 20px
+					background-color $cyan
+					border-radius 25px
+					z-index 5
+					padding 10px
+					width 60px
+					height @width
+					display flex
+					justify-content center
+					align-items center
+					@media $break-md
+						width 80px
+						height @width
+
+					img 
+						width 30px
+						@media $break-md
+							width 40px
+				
+				.section__search__flex
+					display flex
+
+				.section__search__results
+					position absolute
+					top 40px
+					width 100%
+					height 0px
+					box-shadow $shadow
+					border-radius 0 0 40px 40px
+					background-color white
+					z-index 2
+					transition .5s
+					padding 10px
+					padding-top 0px
+					overflow hidden
+					overflow-y scroll
+					text-align left
+					@media $break-md
+						padding 20px
+					&.section__search__results--show
+						padding-top 70px
+						height 300px
+						@media $break-md
+							padding-top 100px
+							height 400px
+					&::-webkit-scrollbar
+						width 8px     /* Tamaño del scroll en vertical */
+						height 8px    /* Tamaño del scroll en horizontal */
+						display none  /* Ocultar scroll */
+							/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+					&::-webkit-scrollbar-thumb
+						background: $cyan
+						border-radius: 4px;
+
+					/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+					&::-webkit-scrollbar-thumb:hover
+						background: #b3b3b3;
+						box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+
+					/* Cambiamos el fondo cuando esté en active */
+					&::-webkit-scrollbar-thumb:active
+						background-color: #999999;
+
+
+					.section__search__results__notfound
+						display flex
+						justify-content center
+						align-items center
+						flex-direction column
+						margin-top 40px
+						display none
+						&.section__search__results__notfound--show
+							display flex
+
+						.section__description
+							color $color_secondary
+						
+						.section__face
+							font-size 48px
+							line-height 64px
+							color $color_secondary
+							margin-bottom 20px
+					.section__search__result
+						padding 10px 20px
+						display flex
+						align-items center
+						color $color_primary
+						border-radius 20px
+						background-color transparent
+						transition .5s
+						&:hover
+							background-color rgba(0,43,255,.1)
+						.section__search__name
+							font-size 12px
+							line-height 22px
+							margin-right 10px
+							@media $break-md
+								font-size 20px
+								line-height 24px
+								margin-right 20px
+						.section__search__tag
+							font-size 10px
+							line-height 18px
+							opacity .7
+							border 1px dashed $color_primary
+							border-radius 15px
+							padding 2px 5px
+							@media $break-md
+								padding 5px 10px
+								font-size 18px
+								line-height 22px					
+
+	&.section--media
+		.section__content
+			color $color_secondary
+			max-width 500px
+			padding 20px
+			.section__title
+				font-style italic
+				position relative
+				margin-bottom 20px
+				@media $break-md
+					margin-bottom 80px
+				span 
+					position absolute
+					top -10px
+					left -10px
+					font-size 12px
+					line-height 18px
+
+		&.section--media--right
+			.section__content
+				text-align right
+				float right
+				.section__title
+					span 
+						left initial 
+						right -10px
+		
+		&.section--media--form
+			margin-top 100px
+			
+			
+		.section__toggle
+			display none
+			max-width 900px
+			margin 0 auto
+			padding-top 80px
+
+	&.section--testimonies
+		padding 20px 0px
+		.section__body
+			padding 20px 0px
+			@media $break-md
+				padding 40px 0px
+	
+	&.section--fast
+		z-index 2
+		.section__body
+			padding 20px
+	
+	&.section--header
+		background-color $color_primary
+		z-index 2
+		.section__body
+			color white
+			text-align center
+
+			.section__subtitle
+				margin-bottom 20px
+				display block
+			.section__title
+				font-size 38px
+				line-height 46px
+				font-style italic
+				font-weight 800
+				@media $break-sm
+					font-size 48px
+					line-height 54px
+				@media $break-md
+					font-size 54px
+					line-height 58px
+					
+
+	&.section--help
+		padding-bottom 40px
+		.section__body
+			.section__search
+				position relative
+				max-width 1000px
+				margin 0 auto
+				text-align center
+				
+				.section__search__text
+					font-size 14px
+					line-height 18px
+					padding 10px
+				
+				.section__search__back
+					cover(fixed)
+					background-color rgba(0, 43, 255,.6)
+					z-index 1
+					display none
+					&.section__search__back--show
+						display block
+						animation fadeIn .5s
+
+					&.section__search__back--out
+						animation fadeOut .5s ease both
+
+				
+				.section__search__input
+					position relative
+					z-index 2
+					margin 0 10px
+					@media $break-md
+						margin 0
+
+				input 
+					padding 30px
+					background-color white
+					box-shadow $shadow
+					border-radius 40px
+					font-size 24px
+					line-height 28px
+					color rgba(0,0,0,.7)
+					z-index 3
+					position relative
+					width 100%
+					@media $break-md
+						padding 40px
+					&::placeholder
+						font-size 18px
+						line-height 24px
+						color rgba(0,0,0,.3)
+						@media $break-md
+							font-size 24px
+							line-height 28px
+										
+				.section__search__button
+					position absolute
+					top 50%
+					right 0%
+					transform translate(0%,-50%)
+					margin-right 20px
+					background-color $cyan
+					border-radius 25px
+					z-index 5
+					padding 10px
+					width 60px
+					height @width
+					display flex
+					justify-content center
+					align-items center
+					@media $break-md
+						width 80px
+						height @width
+					button
+						backgroud-color transparent !important
+						backgroud transparent !important
+					img 
+						width 30px
+						backgroud transparent !important
+						@media $break-md
+							width 40px
+							backgroud transparent !important
+
+	&.section--faq
+		.section__header
+			margin 20px 0px
+			margin-bottom 40px
+		
+		.section__body
+			margin-bottom 40px
+	
+		.section__title
+			color $dark
+
+	&.section--singledoc
+		z-index 3
+		overflow initial
+		.section__video
+			position relative
+			box-shadow $shadow
+			border-radius 15px
+			overflow hidden
+			max-width 600px
+			margin 0 auto
+			margin-bottom 40px
+			margin-top -40px
+			.section__bg
+				position relative
+				proportion 16,9
+		
+		.section__action 
+			width 100%
+			text-align center
+			margin-bottom 30px
+			padding 10px
+			background-color $cyan
+			border-radius 40px
+			@media $break-md
+				padding 20px
+			.btn
+				font-size 18px
+				line-height 24px
+				@media $break-md
+					font-size 22px
+					line-height 28px
+
+		.section__content
+			margin-bottom 40px
+
+		.section__boxs
+			.section__box
+				background-color white
+				border-radius 15px
+				box-shadow $shadow
+				padding 20px 30px
+				min-height 290px
+				display flex
+				flex-direction column
+				align-items center
+				justify-content center
+				text-align left
+				.section__title
+					color $color_primary
+				.section__description
+					font-size 14px
+					line-height 24px
+	&.section--plans
+		.section__wrap.section--md
+			margin 70px auto
+			.section__header
+				margin-bottom 20px
+			.section__body
+				.cols
+					padding-top 60px
+					.col-md-4
+						article
+							@media $break-md
+								border-radius 0
+						&:first-child
+							article
+								@media $break-md
+									border-radius 15px 0 0 15px
+						&:last-child
+							article
+								@media $break-md
+									border-radius 0 15px 15px 0
+	&.section--usertype
+		margin auto
+		.section__wrap.section__wrap--sm
+			margin 130px auto
+			padding 0px 200px 
+			.section__title
+					font-size: 47px
+					line-height: 1.05em
+					text-align: center
+	&.section--features
+		.section__wrap
+			margin 100px auto
+			padding 0px 200px 
+			.section__body
+				padding 0px 40px
+				display flex
+				flex-direction: column
+				justify-content: space-between
+				gap 15px
+				.section__uppertitle
+					margin-bottom: 0px
+					color $color_primary
+				.section__title
+					font-size: 47px
+					line-height: 1.05em
+				.btn 
+					width: 25%
+
+			.section__upper,
+			.section__lower
+				padding 0px
+				margin: 80px auto
+				display flex
+				margin auto
+				justify-content: space-between
+				gap 20px
+		&.section--features--2
+			background-color: #f4f6ff
+			.section__wrap
+				background-color: #f4f6ff
+	&.section--partners
+		.section__wrap
+			margin 100px auto
+			padding 0px 200px 
+			.section__images
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				gap 10px
+				.section__image
+					width: 150px
+	&.section--numbers
+		.section__wrap
+			display: flex
+			justify-content: space-around
+			margin auto
+			font-family: Arial, Helvetica, sans-serif
+			margin 70px 0px
+			.section__icon
+				font-size: 40px
+			.section__amount
+				font-size: 55px
+			.section__title
+				font-size: 30px
+				margin: 20px 0px
+	&.section--contactus
+		.section__wrap
+			margin 70px 0px	
+			background-color: #f4f6ff
+			.section__body
+				display: flex
+				flex-direction: column
+				margin: auto
+				justify-content: center
+				gap 30px
+				width: 500px
+				.section__title
+					text-align: center
+					font-size: 47px
+					width: 100%
+				.section__description 
+					text-align: center
+				.btn
+					text-align: center

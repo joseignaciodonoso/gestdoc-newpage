@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Gestdoc</title>
+    <meta charset="UTF-8">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/main.css?v=28667" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=28667" type="text/javascript"></script>
+    <!-- Meta tags facebook-->
+    <meta property="og:title" content="#">
+    <meta property="og:description" content="#">
+    <meta property="og:image" content="#">
+    <!-- Meta tags twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="#">
+    <meta name="twitter:description" content="#">
+    <meta name="twitter:image" content="#">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <script src="js/selectpower.js"></script>
+    <script src="gestdocRequest.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header__primary">
+        <div class="header__wrap">
+          <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="img/icons/logo-gestdoc-blue.svg"></a></div>
+            <div class="header__nav">
+              <div class="header__nav__bg"></div>
+              <div class="header__nav__nav">
+                <div class="header__nav__close">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="header__nav__back">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="header__nav__logo"><a href="index.html"><img src="img/icons/logo-gestdoc-blue.svg"></a></div>
+                <nav>
+                  <ul>
+                    <li><a href="index.html">Cómo funciona</a></li>
+                    <li><a href="aboutus.html">Nosotros</a></li>
+                    <li><a href="docs.html">Documentos</a></li>
+                  </ul>
+                </nav>
+                <div class="header__nav__buttons">
+                  <div class="header__item"><a data-open-login class="btn">Ingresar</a></div>
+                </div>
+                <div class="header__nav__footer">
+                  <div class="header__nav__socials">
+                    <div class="header__nav__social"><a href="#"><span class="fa fa-facebook"></span></a></div>
+                    <div class="header__nav__social"><a href="#"><span class="fa fa-instagram"></span></a></div>
+                    <div class="header__nav__social"><a href="#"><span class="fa fa-youtube"></span></a></div>
+                  </div>
+                  <div class="header__nav__date">
+                    <div class="header__nav__text">contacto@gestdoc.cl</div>
+                    <div class="header__nav__number">+56 9 8484 4444</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__item"><a data-open-login class="btn">Ingresar</a></div>
+              <div class="header__item header__item--ham">
+                <div class="header__ham"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="sections">
+      <section class="section--header">
+        <div class="section__wrap section__wrap--header">
+          <div class="section__body">
+            <h1 class="section__title">Documentos</h1>
+          </div>
+        </div>
+      </section>
+      <section class="section--fast">
+        <div class="section__wrap section--md">
+          <div class="section__body">
+            <div class="cols">
+              <div class="col-xs-6 col-md-4">
+                <article class="article--fast">
+                  <div class="article__tag">Est vivamus
+                  </div>
+                  <div class="article__icon"><img src="img/icons/1.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Tempus blandit</a></h5>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-4">
+                <article class="article--fast">
+                  <div class="article__tag">Rutrum lacinia
+                  </div>
+                  <div class="article__icon"><img src="img/icons/2.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Commodo potenti</a></h5>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-4">
+                <article class="article--fast">
+                  <div class="article__icon"><img src="img/icons/3.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Ornare sed</a></h5>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--docs">
+        <div class="section__wrap section--md">
+          <div class="section__header section__header--center"> 
+            <h3 class="section__title">Categorías</h3>
+            <div class="section__filters filters dscroll">
+              <ul data-filter-group="category" class="menu button-group">
+                <li data-filter="*" class="section__filter current">Todos</li>
+                <li data-filter=".1" class="section__filter">Firmas</li>
+                <li data-filter=".2" class="section__filter">Certificados</li>
+                <li data-filter=".3" class="section__filter">Legal</li>
+                <li data-filter=".4" class="section__filter">SII</li>
+                <li data-filter=".5" class="section__filter">Firma electronica</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section__body">
+            <div class="cols cols-gutter-2 grid">
+              <div class="col-xs-6 col-md-3 1">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/3.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Rutrum pulvinar</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 2">
+                <article id="contrato" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/1.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Vel congue</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 3">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/2.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Libero fusce</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 4">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/3.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Curabitur egestas</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 5">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/4.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Duis vehicula</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 1">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/5.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Fames nec</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 2">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/6.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Taciti sapien</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 3">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/7.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Etiam conubia</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 4">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/5.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Fusce hac</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 5">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/6.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Orci rhoncus</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 1">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/7.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Cras nisl</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 1">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/3.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Mi non</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 2">
+                <article id="contrato" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/1.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Habitant curabitur</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 3">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/2.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Aliquam ultricies</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 4">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/3.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Porttitor diam</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 5">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/4.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Curae arcu</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 1">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/5.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Eleifend tempor</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 2">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/6.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Hac malesuada</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 3">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/7.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Luctus hendrerit</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 4">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/5.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Porta accumsan</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 5">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/6.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Vel ut</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 1">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/7.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Curabitur nibh</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 1">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/3.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Ad laoreet</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 2">
+                <article id="contrato" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/1.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Consectetur dui</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 3">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/2.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Fringilla ut</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 4">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/3.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Turpis fringilla</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 5">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/4.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Augue vehicula</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 1">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/5.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Curabitur porta</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 2">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/6.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Eget et</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 3">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/7.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Arcu posuere</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 4">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/5.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Primis hac</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 5">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/6.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Libero mollis</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 1">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/7.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Vestibulum venenatis</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 1">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/3.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Enim ligula</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 2">
+                <article id="contrato" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/1.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Praesent maecenas</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 3">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/2.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Purus fusce</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 4">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/3.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Tristique scelerisque</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 5">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/4.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Mauris torquent</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 1">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/5.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Urna orci</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 2">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/6.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Phasellus massa</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 3">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/7.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Quam tempus</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 4">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/5.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Himenaeos hac</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 5">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/6.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Dictum phasellus</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-3 1">
+                <article id="regimen" class="article--doc">
+                  <div class="article__icon"><img src="img/icons/7.svg"></div>
+                  <div class="article__body">
+                    <h5 class="article__title"><a href="#">Aliquam tellus</a></h5><a data-modal-docs class="btn btn--link-xs">Ver todos</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--help">
+        <div class="section__wrap section--md">
+          <div class="section__header">
+            <h3 class="h2 section__title">¿No encuentras el documento que buscas?</h3>
+            <p class="section__desscription">Dejanos tu mail y nos pondremos en contacto contigo.</p>
+          </div>
+          <div class="section__body">
+            <div class="section__search">
+              <div class="section__search__input">
+                <form>
+                  <input type="text" placeholder="Mail">
+                  <div class="section__search__button">
+                    <button><img src="img/icons/search.svg"></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="modal">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__header">
+              <div class="modal__icon"><img src="img/icons/1.svg"></div>
+              <div class="modal__header__content"><span class="modal__category">Documentos</span>
+                <h3 class="modal__title">Declaraciones</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="login">
+        <div class="login__back"></div>
+        <div class="login__front login__front--login">
+          <div class="login__box">
+            <div class="login__icon"><img src="img/icons/logo-gestdoc.png"></div>
+            <div class="login__form">
+              <form class="form">
+                <div class="form__element">
+                  <div class="form__input">
+                    <input type="email" placeholder="Mail">
+                  </div>
+                </div>
+                <div class="form__element">
+                  <div class="form__input">
+                    <input type="password" placeholder="Clave">
+                    <button class="btn">Entrar</button>
+                  </div>
+                </div>
+                <div class="form__element form__element--center">
+                  <label>
+                    <input type="checkbox" name="#" value="#">Mantener mi sesión
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="login__footer"><a href="#" class="btn btn--link">Olvide mi contraseña</a><a href="#" class="btn btn--link">Registrarme</a></div>
+            <p class="login__description">Dictum pulvinar euismod dui cubilia gravida congue platea sed posuere. Gravida bibendum aptent ultrices volutpat taciti nam nec orci convallis laoreet class eu dictum rutrum.
+            </p>
+          </div>
+        </div>
+        <div class="login__front login__front--register">
+          <div class="login__box">
+            <div class="login__icon"><img src="img/icons/logo-gestdoc.png"></div>
+            <div class="login__form">
+              <form class="form">
+                <div class="form__element">
+                  <div class="form__input">
+                    <input type="email" placeholder="Mail">
+                  </div>
+                </div>
+                <div class="form__element">
+                  <div class="form__input">
+                    <input type="password" placeholder="Clave">
+                    <button class="btn">Registrar</button>
+                  </div>
+                </div>
+                <div class="form__element form__element--center">
+                  <label>
+                    <input type="checkbox" name="#" value="#">Acepto los términos y condiciones
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="login__footer"><a href="#" class="btn btn--link">Olvide mi contraseña</a><a href="#" class="btn btn--link">Ingresar</a></div>
+            <p class="login__description">Pharetra nisi tortor sagittis nunc malesuada auctor primis netus cubilia. Iaculis integer semper felis maecenas aenean himenaeos diam facilisis faucibus congue rhoncus curabitur dapibus fusce.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer__wrap">
+        <div class="cols">
+          <div class="col-xs-6 col-md-2">
+            <div class="footer__links">
+              <ul>
+                <li class="footer__links__title">Menú</li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Documentos</a></li>
+                <li><a href="#">Legalidad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="footer__links">
+              <ul>
+                <li class="footer__links__title">Ayuda</li>
+                <li><a href="faq.html">Preguntas frecuentes</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Políticas</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <div class="footer__info">
+              <div class="footer__socials">
+                <ul>
+                  <li> <a href="#"><span class="fa fa-facebook"></span></a></li>
+                  <li> <a href="#"><span class="fa fa-instagram"></span></a></li>
+                  <li> <a href="#"><span class="fa fa-youtube"></span></a></li>
+                </ul>
+              </div>
+              <p class="footer__description">contacto@gestidoc.cl</p>
+              <p class="footer__description">+56 9 8484 4444</p>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="footer__copyright">
+              <div class="footer__logo"><img src="img/icons/logo-gestdoc-blue.svg"></div>
+              <div class="footer__description">Todos los derechos reservados Gestdoc S.A 2020. Huerfanos 1120 of 1408, Santiago, CHile</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

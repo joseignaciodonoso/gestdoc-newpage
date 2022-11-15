@@ -1,0 +1,95 @@
+
+.content
+	line-height 26px
+	//font-size $global-size-md
+	color $gray
+
+	h1, h2, h3, h4,	p, ol, ul, table, blockquote, pre, iframe
+		margin-bottom $sep
+		&:last-child
+			margin-bottom 0
+
+	h1, h2, h3, h4, h5
+		padding-top 10px
+		&:first-child
+			padding-top 0
+
+	ol
+		list-style-type decimal
+		margin-left 20px
+
+	ul
+		margin-left 0
+		li
+			padding-left 25px
+			margin-bottom 5px
+			position relative
+			&:before
+				content "\f00c"
+				font-family "FontAwesome"
+				position absolute
+				top 0
+				left 0
+				color $color_primary
+
+
+	blockquote
+		padding 10px $sep
+		padding-left 40px
+		border-left 2px solid color
+		font-size 1.2em
+		line-height 1.5em
+		font-style italic
+		position relative
+		&:before
+			content "\f10d"
+			font-family "FontAwesome"
+			position absolute
+			top 0
+			left 10px
+			opacity .5
+			display inline-block
+			padding-right 2px
+
+	pre
+		background rgba(0,0,0,.05)
+		padding 10px $sep
+		overflow auto
+
+	img
+		margin-bottom 20px
+		// Wp
+		&.alignright
+			@media $break-sm
+				float right
+				margin-left 20px
+		&.alignleft
+			@media $break-sm
+				float left
+				margin-right 20px
+		&.aligncenter
+			margin 0 auto
+
+
+	iframe
+		width 100%
+		max-width 100%
+		display block
+		height 200px
+		background lighter
+		@media $break-sm
+			height 300px
+		@media $break-md
+			height 400px
+
+	a
+		text-decoration none
+		&:hover:not(.btn)
+			text-decoration underline
+
+	p.p-lg
+		font-size 120%
+		line-height 160%
+		font-style italic
+
+

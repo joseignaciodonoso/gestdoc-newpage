@@ -1,0 +1,88 @@
+extends ../templates/default.jade
+block page
+
+	section.section--header
+
+		.section__wrap.section__wrap--header-doc
+			.section__body
+				span.section__subtitle Declaraciones
+				h1.section__title Declaración jurada de cesantía
+
+	section.section--singledoc
+		.section__wrap.section--md
+			.section__video.yt-video.play(data-id="SwHNRl6wBEI")
+				.section__bg.yt-video-inner
+					.bg
+						img(src="img/uploads/1.png")
+				
+			.section__action 
+				a.btn(href="#") Me interesa este documento 
+					span.fa.fa-arrow-right
+
+
+			.section__body
+				.section__content.section--center
+					h3 En pocas palabras, ¿qué es?
+					p: +lorem(45)			
+					p: +lorem(25)			
+
+
+				.section__boxs
+					.cols
+						.col-md-6
+							.section__box
+								h4.section__title ¿Para que sirve?
+								p.section__description: +lorem(45)
+						.col-md-6
+							.section__box
+								h4.section__title Requisitos
+								p.section__description: +lorem(65)
+						.col-md-6
+							.section__box
+								h4.section__title Importancia
+								p.section__description: +lorem(25)
+						.col-md-6
+							.section__box
+								h4.section__title Valor
+								p.section__description: +lorem(35)
+
+	section.section--fast
+		.section__wrap.section--md
+			.section__header
+				h3.h2.section__title Documentos relacionados
+
+			.section__body
+				.cols.cols--scroll
+					.col-md-3
+						article.article--fast
+							.article__tag: +lorem(2)
+							.article__icon
+								img(src="img/icons/1.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+					.col-md-3
+						article.article--fast
+							.article__tag: +lorem(2)
+							.article__icon
+								img(src="img/icons/2.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+					.col-md-3
+						article.article--fast
+							.article__icon
+								img(src="img/icons/3.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+					.col-md-3
+						article.article--fast
+							.article__icon
+								img(src="img/icons/4.svg")
+							.article__body
+								h5.article__title
+									a(href="#"): +lorem(2)
+
+			.section__footer
+				a.btn.btn--link(href="#") Ver todos

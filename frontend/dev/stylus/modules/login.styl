@@ -1,0 +1,69 @@
+.login
+	position fixed 
+	top 0
+	left 0
+	width 100%
+	height 100%
+	z-index 20
+	font-family $font2
+	display none
+	&.login--show
+		display block
+
+	&.login--show--out
+		.login__back
+			animation fadeOut .5s ease both
+		.login__front
+			animation slideRightOut .5s ease both
+
+	&.login--show--in
+		.login__back
+			animation fadeIn .5s ease both
+		.login__front
+			animation slideLeft .5s ease
+
+	.login__back
+		cover(fixed)
+		background rgba(0,0,0,.5)
+
+	.login__front
+		position relative
+		width 90%
+		height 100%
+		float right
+		background-color $light
+		display none
+		@media $break-md
+			width 50%
+		&.login__front--show
+			display block
+
+		.login__box
+			position absolute
+			top 50%
+			left 50%
+			transform translate(-50%,-50%)
+			width 100%
+			max-width 90%
+			@media $break-md
+				max-width 70%
+
+			.login__icon
+				margin-bottom 40px
+				img
+					width 150px
+					@media $break-md
+						width 250px
+
+	.login__footer
+		width 100%
+		text-align center
+		padding 20px 10px
+		display flex
+		justify-content space-around
+
+	.login__description
+		font-size 10px
+		line-height 14px
+		text-align center
+		opacity .7

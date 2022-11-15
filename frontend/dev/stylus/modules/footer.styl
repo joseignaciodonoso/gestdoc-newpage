@@ -1,0 +1,102 @@
+footer
+	color white
+	text-align center
+	position relative
+	background-color white
+	font-family $font2
+	background white
+	border-bottom 10px solid $cyan
+	@media $break-sm
+		text-align left
+	
+	.footer__wrap
+		position relative
+		max-width $limit
+		margin 0 auto
+		padding 30px 20px
+		@media $break-md
+			padding 40px 40px
+	
+	.footer__description
+		margin-bottom 10px
+		color $color_secondary
+		font-size 24px
+		line-height $global-lh-md
+		font-weight 500
+
+	.footer__flex
+		@media $break-md
+			display flex
+			flex-direction row
+			align-items center
+	
+
+	.footer__links
+		text-align left
+		margin-bottom 20px
+		@media $break-md
+			margin-bottom 0
+		ul
+			li
+				padding 0
+				margin 0 0 5px 0
+				&.footer__links__title
+					text-transform uppercase
+					color $color_primary
+					font-size 10px
+					line-height 12px
+					font-weight bold
+					@media $break-md
+						font-size 10px
+						line-height 1
+						margin 0 0 10px 0
+						font-weight 500
+				a
+					font-size 16px
+					line-height 1
+					font-weight 500		
+
+				text-transform capitalize
+				padding 5px 0px
+				a
+					color $color_secondary
+
+	.footer__info
+		width 100%
+		text-align center
+		@media $break-md
+			text-align right
+		.footer__socials
+			margin-bottom 10px
+			 ul
+				li 
+					display inline-block
+					a
+						padding 10px
+						font-size 24px
+						line-height 28px
+						font-weight bold
+						@media $break-md
+							font-size 18px
+							line-height 22px
+
+
+	.footer__copyright
+		text-align center
+		.footer__logo
+			margin-bottom 20px
+			img
+				width 250px
+		
+		 .footer__description
+			 font-size 10px
+			 line-height 12px
+			 font-weight 400
+			 opacity .7
+			 font-weight 10
+			 color #231750
+			 max-width 70%
+			 margin 0 auto
+			 @media $break-md
+				font-size 12px
+				line-height 14px				 

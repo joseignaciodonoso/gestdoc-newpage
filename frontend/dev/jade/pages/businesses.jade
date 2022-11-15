@@ -1,0 +1,142 @@
+extends ../templates/default.jade
+block page
+
+	section.section--main 
+		.section__wrap  
+			.section__body 
+				h2.section__title La solucion para la gestion de documentos que tu empresa estaba buscando 
+
+	section.section--features 
+		.section__wrap 
+			.section__body  
+				.cols 
+					.col-md-4 
+						.section__card
+							.scetion__body 
+								.section__icon
+									img(src="#")
+								p.section__description: +lorem(15)
+						.section__card
+							.section__icon
+									img(src="#")
+								p.section__description: +lorem(15)
+					.col-md-4
+						.section__card
+							.section__icon
+									img(src="#")
+								p.section__description: +lorem(15)
+						.section__card
+							.section__icon
+									img(src="#")
+								p.section__description: +lorem(15)
+					.col-md-4
+						.section__card
+							.section__icon
+									img(src="#")
+								p.section__description: +lorem(15)
+						.section__card
+							.section__icon
+									img(src="#")
+								p.section__description: +lorem(15)
+
+	section.section--information 
+		.section__wrap 
+			.section__banner.section__banner--upper 
+				.section__image 
+					img(src="#")
+				.section__body 
+					h4.section__title Contrata un plan a tu medida
+					p.secction__description: +lorem(15)
+			.section__banner.section__banner--lower
+				.section__image 
+					img(src="#")
+				.section__body 
+					h4.section__title Contrata un plan a tu medida
+					p.secction__description: +lorem(15)
+	section.section--partners 
+		.section__wrap 
+			.section__images
+				.section__image
+					img(src="#")
+				.section__image		
+					img(src="#")
+				.section__image
+					img(src="#")
+
+	section.section--plans
+		.section__wrap.section--md
+			.section__header
+				p.section__description: +lorem(20)
+			.section__body
+				.cols.cols--0.cols--scroll
+					.col-md-4
+						article.article--plan
+							.article__header
+								.article__icon
+									img(src="img/icons/4.svg")
+								h3.article__title Plan Empresa
+							.article__body
+								ul
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+							.article__footer 
+								.article__price
+									span.article__price $70.000
+									span.article__month /mes
+								a.btn.btn--plan(href="#") Contratar
+					.col-md-4
+						article.article--plan.article--plan--grow
+							.article__tag Plan Popular
+							.article__header
+								.article__icon
+									img(src="img/icons/2.svg")
+								h3.h4.article__title Plan Pyme
+							.article__body
+								ul
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+							.article__footer 
+								.article__price
+									span.article__price $70.000
+									span.article__month /mes
+								a.btn.btn--plan(href="#") Contratar
+					.col-md-4
+						article.article--plan
+							.article__header
+								.article__icon
+									img(src="img/icons/3.svg")
+								h3.h4.article__title Plan Empresa
+							.article__body
+								ul
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+							.article__footer 
+								.article__price
+									span.article__price $70.000
+									span.article__month /mes
+								a.btn.btn--plan(href="#") Contratar
+			.section__footer
+				a.btn(href="#")
+
+	section.section--contactus 
+		.section__wrap 
+			.section__body 	
+				h3.section__title Dejanos un mensaje
+				a.btn(href="#") Contactanos
+
+

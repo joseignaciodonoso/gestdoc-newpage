@@ -1,0 +1,78 @@
+extends ../templates/default.jade
+block page
+
+	section.section--header
+
+		.section__wrap.section__wrap--header
+			.section__body
+				h1.section__title Contrata tu plan
+
+
+	section.section--plans
+		.section__wrap.section--md
+			.section__header
+				p.section__description: +lorem(20)
+			.section__body
+				.cols.cols--0.cols--scroll
+					.col-md-4
+						article.article--plan
+							.article__header
+								.article__icon
+									img(src="img/icons/4.svg")
+								h3.article__title Plan Empresa
+							.article__body
+								ul
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+							.article__footer 
+								.article__price
+									span.article__price $70.000
+									span.article__month /mes
+								a.btn.btn--plan(href="#") Contratar
+					.col-md-4
+						article.article--plan.article--plan--grow
+							.article__tag Plan Popular
+							.article__header
+								.article__icon
+									img(src="img/icons/2.svg")
+								h3.h4.article__title Plan Pyme
+							.article__body
+								ul
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+							.article__footer 
+								.article__price
+									span.article__price $70.000
+									span.article__month /mes
+								a.btn.btn--plan(href="#") Contratar
+					.col-md-4
+						article.article--plan
+							.article__header
+								.article__icon
+									img(src="img/icons/3.svg")
+								h3.h4.article__title Plan Empresa
+							.article__body
+								ul
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+									li: +lorem(2)
+							.article__footer 
+								.article__price
+									span.article__price $70.000
+									span.article__month /mes
+								a.btn.btn--plan(href="#") Contratar
+

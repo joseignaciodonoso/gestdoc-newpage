@@ -1,0 +1,186 @@
+extends ../templates/default.jade
+block page
+
+	section.section--main
+
+		.section__primary
+			.section__wrap.section__wrap--main
+				.section__body
+					h1.section__title Descarga, crea, firma  y gestiona todos los <span class="words-alternate" data-delay="4000" data-words="Contratos,Vulputate primis,Erat Suspendisse,Conubia aliquet,Eget faucibus" style>documetos</span> que tu o tu empresa necesitan.
+					p.section__description Contamos con un software de ultima generacion que facilita la gestion y firma de todos tus documentos de manera electronica y avanzada
+					.section__search
+						input#search(type="text" placeholder="Buscar documento")
+				.section__image 
+					img(src="./img/gif/3.gif")
+
+	section.section--usertype 
+		.section__wrap.section__wrap--sm 
+			h2.section__title Tenemos la solucion que buscas
+			.cols 
+				.col-xs-12.col-md-6 
+					article.article--user
+						.article__body 
+							img(src="./img/icons/people.svg")
+							h4.article__title Personas 
+							p.article__description: +lorem(20)
+				.col-xs-12.col-md-6 
+					article.article--user
+						.article__body
+							img(src="./img/icons/business.svg")
+							h4.article__title Empresas
+							p.article__description: +lorem(20)
+
+	section.section--features
+		.section__wrap
+				.cols
+					.col-md-6
+						.section__upper
+							article.article--feature
+								.article__body
+									.article__image
+										img(src="./img/icons/clipboard.gif")
+									h4.article__title Completa Formularios
+									p.article__description: +lorem(10)
+							article.article--feature
+								.article__body 
+									.article__image
+										img(src="./img/icons/edit.gif")
+									h4.article__title Firma electrónica o avanzada
+									p.article__description: +lorem(10)
+						.section__lower
+							article.article--feature 
+								.article__body 	
+									.article__image
+										img(src="./img/icons/archive.gif")
+									h4.article__title Almacena tus documentos
+									p.article__description: +lorem(10)
+							article.article--feature
+								.article__body 
+									.article__image
+										img(src="./img/icons/flow-chart.gif")
+									h4.article__title Crea tus propios flujos
+									p.article__description: +lorem(10)
+					.col-md-6
+						.section__body 
+							h5.section__uppertitle Dile adios a las notarias.
+							h2.section__title Gestiona tus documentos facilmente.
+							p.section__content: +lorem(40)
+							a.btn(href="#") Ver mas
+
+	section.section--features.section--features--2
+		.section__wrap 
+				.cols 	
+					.col-md-6
+						.section__body 
+							h5.section__uppertitle Dile adios a las notarias.
+							h2.section__title Gestiona tus documentos facilmente.
+							p.section__content: +lorem(40)
+					.col-md-6 
+						.section__image 
+							img(src="./img/gif/2.gif")
+
+	section.section--partners 
+		.section__wrap 
+			.section__images
+				.section__image
+					img(src="./img/logos/logo1.png")
+				.section__image		
+					img(src="./img/logos/logo4.png")
+				.section__image
+					img(src="./img/logos/logo5.png")
+				.section__image
+					img(src="./img/logos/logo1.png")
+
+	section.section--numbers 
+		.section__wrap
+			.section__bussines 
+				.section__icon
+					span.material-symbols-rounded	edit_square
+				.section__amount +100
+				.section__title Documentos
+
+			.section__cases
+				.section__icon
+					span.material-symbols-rounded	edit_square
+				.section__amount +226
+				.section__title Firmas
+
+			.section__categories
+				.section__icon
+					span.material-symbols-rounded	edit_square
+				.section__amount +20
+				.section__title Empresas 
+
+
+	
+
+	section.section--contactus 
+		.section__wrap 
+			.section__body 	
+				.section__faq 
+					.section__wrap.section__wrap--md.section--md
+						.section__header
+							h3.section__title Preguntas generales
+						.section__body
+							.faq
+								.faq__item
+									h3.faq__question
+										span.fa.fa-angle-down
+										| Lorem ipsum dolor sit
+									.faq__answer
+										.section__content
+											p.section__description: +lorem(25)
+											p.section__description: +lorem(25)
+
+								.faq__item
+									h3.faq__question
+										span.fa.fa-angle-down
+										| Dicta beatae libero illo
+									.faq__answer
+										.section__content
+											p.section__description: +lorem(25)
+											p.section__description: +lorem(25)
+
+								.faq__item
+									h3.faq__question
+										span.fa.fa-angle-down
+										| Similique omnis dolore accusamus labore dolor porro
+									.faq__answer
+										.section__content
+											p.section__description: +lorem(25)
+											p.section__description: +lorem(25)
+
+						.section__header
+							h3.section__title Requisitos
+
+						.section__body
+							.faq
+								.faq__item
+									h3.faq__question
+										span.fa.fa-angle-down
+										| Architecto aperiam quo quis facilis
+									.faq__answer
+										.section__content
+											p.section__description: +lorem(25)
+											p.section__description: +lorem(25)
+
+								.faq__item
+									h3.faq__question
+										span.fa.fa-angle-down
+										| Dolore accusamus labore dolor porro, architecto aperiam
+									.faq__answer
+										.section__content
+											p.section__description: +lorem(25)
+											p.section__description: +lorem(25)
+								.faq__item
+									h3.faq__question
+										span.fa.fa-angle-down
+										| Similique omnis dolore accusamus labore dolor porro
+									.faq__answer
+										.section__content
+											p.section__description: +lorem(25)
+											p.section__description: +lorem(25)
+
+							.section__form 
+
+

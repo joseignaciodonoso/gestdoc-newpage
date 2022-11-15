@@ -1,0 +1,93 @@
+include ../includes/mixins
+include ../includes/articles
+- RAND = Math.floor(Math.random()*100000);
+doctype html
+html(lang='es')
+	head
+		title Gestdoc
+		meta(charset="UTF-8")
+		link(href='img/favicon.png', rel='shortcut icon')
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+		link(href='css/main.css?v='+RAND, rel='stylesheet', type='text/css')
+		script(src='js/main.js?v='+RAND, type='text/javascript')
+
+		// Meta tags facebook
+		meta(property='og:title', content="#")
+		meta(property='og:description', content="#")
+		meta(property='og:image', content="#")
+
+		// Meta tags twitter cards
+		meta(name='twitter:card', content="summary_large_image")
+		meta(name='twitter:title', content="#")
+		meta(name='twitter:description', content="#")
+		meta(name='twitter:image', content="#")
+		link(href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet")
+		link(href="https://fonts.googleapis.com", rel="preconnect")
+		link(href="https://fonts.gstatic.com", rel="preconnect" crossorigin)
+
+		//[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]
+		script(src="js/selectpower.js")
+		script(src="gestdocRequest.js")
+
+
+	body
+		include ../includes/header
+		#sections
+			block page
+			.login
+				.login__back
+				.login__front.login__front--login
+					.login__box
+						.login__icon
+							img(src="img/icons/logo-gestdoc.png")
+						.login__form
+							form.form
+								.form__element
+									.form__input
+										input(type="email" placeholder="Mail")
+
+								.form__element
+									.form__input
+										input(type="password" placeholder="Clave")
+										button.btn Entrar
+
+								.form__element.form__element--center
+									label
+										input(type="checkbox" name="#" value="#")
+										| Mantener mi sesión
+						
+						.login__footer
+							a.btn.btn--link(href="#") Olvide mi contraseña
+							a.btn.btn--link(href="#") Registrarme
+
+						p.login__description: +lorem(25)
+
+
+				.login__front.login__front--register
+					.login__box
+						.login__icon
+							img(src="img/icons/logo-gestdoc.png")
+						.login__form
+							form.form
+								.form__element
+									.form__input
+										input(type="email" placeholder="Mail")
+
+								.form__element
+									.form__input
+										input(type="password" placeholder="Clave")
+										button.btn Registrar
+
+								.form__element.form__element--center
+									label
+										input(type="checkbox" name="#" value="#")
+										| Acepto los términos y condiciones
+						
+						.login__footer
+							a.btn.btn--link(href="#") Olvide mi contraseña
+							a.btn.btn--link(href="#") Ingresar
+
+						p.login__description: +lorem(25)
+
+		include ../includes/footer
